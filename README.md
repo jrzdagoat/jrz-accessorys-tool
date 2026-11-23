@@ -1,9 +1,16 @@
 # jrz's Accessory's Tool
 
-A small desktop app that generates client-side **FiveM** visual files:
+A dark desktop app that generates client-side **FiveM** visual files. Pick a tab, pick a mode, press **Generate**.
 
-- **Weather**: clear, rain, thunder, fog, snow, blizzard, light snow, Christmas, with rain intensity, wind speed, time of day and a weather lock.
-- **Ped lighting**: white, black or custom colour, with intensity and shine sliders.
+| Tab | What it does |
+|---|---|
+| **Snow** | Blizzard, heavy, light or ground-only snow, plus wind speed and direction |
+| **Rain** | Thunderstorm, heavy or light rain, rain amount and wind |
+| **Lightning** | Random lightning flashes with a set interval |
+| **Time Lock** | Pin the in-game clock to an hour and minute |
+| **Ped Light** | White, black or custom colour ped lighting, with intensity and shine |
+
+Choose a mode on several tabs and they are stacked into one resource. A Standard / Christmas switch is in the top right.
 
 ## Requirements
 - Python 3.9+ (tkinter is included with the standard installer)
@@ -12,7 +19,7 @@ A small desktop app that generates client-side **FiveM** visual files:
 ```bash
 python src/jrz_accessorys_tool.py
 ```
-1. Choose your settings and press **Generate Files**.
+1. Choose your modes and press **Generate**.
 2. Copy the generated `jrz_accessory` folder from `Documents/jrz Accessory's Tool/Output` into your FiveM `resources` folder.
 3. Add `ensure jrz_accessory` to your `server.cfg` (or your client resources setup).
 
